@@ -9,5 +9,6 @@ www.testsite.loc – This site should just output the URI elements: "Your link c
 www.adminsite.loc – On front page show a list of domains from the database. If the uri contains domain name that exists in the domains table (www.adminsite.loc/testsite.loc), then display the list/table of all uri requests made at that domain.
 www.hashsite.loc – Take the first URI element (ignore anything else), hash it using the following pseudo code, and then display it:
 
+
 hash = base64( md5( string ) + current timestamp );
 hash = replace "+" with "-", "/" with "_", "=" with "" in hash;
